@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Github Pages中级教程</title>
+  <meta name="description" content="">
+  <meta name="author" content="陈堰平">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/amelia/bootstrap.min.css">
+<link rel="stylesheet" href="./frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="./frameworks/revealjs/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="./highlighters/highlight.js/css/zenburn.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/slidify-reveal.css">
+
+
+  <style type="text/css">
+    table{background-color: transparent;}
+  </style>
+
+  <!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+  
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h1>Github Pages中级教程</h1>
+  <p><img src="./figure/cos-logo.png" alt=""></p>
+
+<p><a href="http://weibo.com/rucypchen">陈堰平</a> </p>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h2>目录</h2>
+  <ul>
+<li>HTML/CSS 初步</li>
+<li>markdown介绍</li>
+<li>github的使用</li>
+<li>github pages网站的搭建</li>
+</ul>
+
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>HTML/CSS 初步</h2>
+    
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>HTML 概述</h2>
+
+<ul>
+<li>  HTML 指的是超文本标记语言 (Hyper Text Markup Language)</li>
+<li>  HTML 不是一种编程语言，而是一种标记语言 (markup language)</li>
+<li>  标记语言是一套标记标签 (markup tag)</li>
+<li>  HTML 使用标记标签来描述网页</li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>CSS 概述</h2>
+
+<ul>
+<li>   CSS 指层叠样式表 (Cascading Style Sheets)</li>
+<li>   样式定义如何显示 HTML 元素</li>
+<li>   样式通常存储在样式表中</li>
+<li>   把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题</li>
+<li>   外部样式表可以极大提高工作效率</li>
+<li>   外部样式表通常存储在 CSS 文件中</li>
+<li>   多个样式定义可层叠为一</li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>学习资源</h2>
+
+<ul>
+<li><a href="http://www.w3school.com.cn/">w3school</a>   在线帮助</li>
+<li><a href="http://www.codecademy.com/">Codecademy</a> 在线交互式学习网站</li>
+<li><a href="http://www.codeschool.com/%E2%80%8E">Code School</a> 同上，一部分课程免费</li>
+<li><a href="http://wenku.baidu.com/course/list/9">百度文库视频教程</a></li>
+<li><a href="http://zixue.it">自学it网</a> </li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>markdown介绍</h2>
+    
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>语法介绍</h2>
+
+<ul>
+<li><a href="http://daringfireball.net/projects/markdown/syntax/">英文教程</a></li>
+<li><a href="http://wowubuntu.com/markdown/">中文教程</a></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>几种解析markdown的工具</h2>
+
+<ul>
+<li>R + markdown包</li>
+<li>RStudio</li>
+<li>sublime text2 + Markdown Preview插件</li>
+<li>pandoc</li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>用markdown写slides的工具</h2>
+
+<ul>
+<li>R + slidify包，参考文章<a href="http://xccds.github.io/2013/04/slides.html">实现可重复的统计slides</a>，<a href="https://github.com/yanping/talk-in-google">示例</a></li>
+<li>pandoc，<a href="https://github.com/yanping/reveal.js-with-pandoc">示例</a></li>
+<li><a href="https://github.com/jimhester/knitrBootstrap">knitrBoostrap</a>，<a href="https://github.com/yanping/r-training">示例</a></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>github的使用</h2>
+    <ul>
+<li>代码托管，版本控制</li>
+<li>协同作业</li>
+<li>程序猿（媛）社区</li>
+</ul>
+
+<p><img src="./figure/github.png" alt=""></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>git的设置</h2>
+
+<ul>
+<li>Windows: <a href="http://help.github.com/win-set-up-git/">http://help.github.com/win-set-up-git/</a></li>
+<li>MacOS: <a href="http://help.github.com/mac-set-up-git/">http://help.github.com/mac-set-up-git/</a></li>
+<li>Linux: <a href="http://help.github.com/linux-set-up-git/">http://help.github.com/linux-set-up-git/</a></li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>git命令</h2>
+
+<table><thead>
+<tr>
+<th>命令</th>
+<th>用途</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>git init</td>
+<td>初始化本地代码库</td>
+</tr>
+<tr>
+<td>git add</td>
+<td>添加要跟踪的文件</td>
+</tr>
+<tr>
+<td>git commit</td>
+<td>提交更改</td>
+</tr>
+<tr>
+<td>git push</td>
+<td>将本地代码推送到远程代码库</td>
+</tr>
+</tbody></table>
+
+<h3 class="fragment margin-top-20">还可以做什么？</h3>
+
+<ul class = "build incremental">
+<li>代码的穿越</li>
+</ul>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>学习资料</h2>
+
+<ul>
+<li><a href="http://www.worldhello.net/gotgithub/">GotGithub</a></li>
+<li><a href="http://www.yangzhiping.com/tech/github.html">如何高效使用github</a></li>
+<li>GIt权威指南</li>
+</ul>
+
+<p><img src="http://www.worldhello.net/images/gotgit.jpg" alt=""></p>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section>
+   <section class='' data-state=''>
+    <h2>github pages网站的搭建</h2>
+    
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>静态单页面</h2>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+   <section class='' data-state=''>
+    <h2>用jekyll做内容管理系统</h2>
+
+    <aside class='notes'>
+      
+    </aside>
+   </section>
+</section>
+<section class='' data-state='' id='slide-7'>
+  <h2>学习资源介绍</h2>
+  <ul>
+<li><a href="http://www.yangzhiping.com/tech/writing-space.html">理想的写作环境：Git+Github+Markdown+Jekyll</a></li>
+<li><a href="http://yihui.name/cn/2011/10/back-into-the-dust/">魂归大地</a></li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-8'>
+  <h2>谢谢！</h2>
+  <script>
+$('ul.incremental li').addClass('fragment')
+</script>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="./frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="./frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'moon', 
+    transition: Reveal.getQueryHash().transition || 'cube', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: './frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: './frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: './frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: './frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="./highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+
+</html>
