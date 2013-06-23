@@ -14,7 +14,7 @@ bootstrap:
 ---
 
 
-# Github Pages中级教程
+## Github Pages中级教程
 
 ![](./figure/cos-logo.png)
 
@@ -31,6 +31,19 @@ bootstrap:
 - markdown介绍
 - github的使用
 - github pages网站的搭建
+
+--- #config
+
+## 幻灯片设置
+
+Reveal.js的主题设置：
+
+[Sky](?theme=sky#/config) - [Beige](?theme=beige#/config) - [Simple](?theme=simple#/config) - [Serif](?theme=serif#/config) - [Night](?theme=night#/config) - [Default](?theme=default#/config) - [Solarized](?theme=solarized#/config) - [Moon](?theme=moon#/config)
+
+选择切换方式： 
+
+[Cube](?transition=cube#/config) - [Page](?transition=page#/config) - [Concave](?transition=concave#/config) - [Zoom](?transition=zoom#/config) - [Linear](?transition=linear#/config) - [Fade](?transition=fade#/config) - [None](?transition=none#/config) - [Default](?transition=default#/config)
+
 
 --- &vertical
 
@@ -151,11 +164,15 @@ bootstrap:
 
 ## 静态单页面
 
+[![](./figure/github-pages.png)](http://pages.github.com/)
 
 ***
 
 ## 用jekyll做内容管理系统
 
+[![](./figure/jekyll.jpg)](http://jekyllrb.com/)
+
+利用现成的博客框架：[jekyllbootstrap](http://jekyllbootstrap.com/) - [octopress](http://octopress.org)
 
 
 ---  
@@ -168,7 +185,7 @@ bootstrap:
 
 ---
 
-## 谢谢！
+# 谢谢！
 
 
 
